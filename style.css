@@ -1,18 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Open+Sans&display=swap');
+
 *{
-    padding: 0;
     margin: 0;
-    color: brown;
-    
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    background-image: linear-gradient(to right, #7eb5c5, rgb(35, 163, 202));
+}
+.navbar .navbar-brand{
+    color: #fff;
+    outline: 2px solid #7eb5;
+    box-shadow: 5px 5px #888888;
+    margin-left: 20px;
+    padding: 0px 10px;
+    border-radius: 25px;
+}
+.navbar-nav a{
+    color: #fff !important;
+   margin-right: 25px;
+}
+.navbar-nav .appoint{
+    outline: 2px solid #7eb5;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #888888;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background-size: cover;
+}
+.carousel-item .carousel-caption h5{
+    color: #153dac;
+    text-shadow: 3px 3px 4px #fff;
+}
+.carousel-item .carousel-caption p{
+    color: #153dac;
+    text-shadow: 1px 1px 2px #fff;
 }
 
-.navbar{
-    background-image: linear-gradient(rgb(209, 203, 186),rgb(229, 229, 238));
+.carousel-caption{
+    top: 250px;
 }
-.navbar-nav{
-    padding: 0 35px;
-}
-.carousel-inner{
-    height: 100vh;
-    width: 50%;
+.carousel-caption p{
+    width: 80%;
     margin: auto;
+    padding-top: 20px;
+}
+.carousel-caption h5{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5cm;
+}
+#team .item img{
+    height: 250px;
+    object-fit: cover;
+}
+#team .owl-carousel .item{
+    padding: 10px;
+}
+footer{
+    background-color: #5f828d;
+    color: #d5d5d5;
+    padding: 2rem 0;
+}
+#contact .mar{
+    margin-bottom: 60px;
+}
+#contact .mar .a-line .icon-s{
+    font-size: 2.5em;
+    padding: 3rem;
+}
+@media (max-width: 768px) {
+    img{
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+@media (min-width: 768px) {
+    img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .carousel-caption{
+        top: 400px;
+    }
+    .carousel-caption h5{
+        font-size: 40px;
+    }
+    .carousel-caption p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .carousel-caption{
+        top: 200px;
+    }
 }
