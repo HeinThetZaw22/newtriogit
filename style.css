@@ -161,14 +161,103 @@ footer{
     /* border: 2px rgb(248, 246, 246) solid; */
     /* box-shadow: 5px 5px rgb(245, 242, 242); */
 }
+.service-content a{
+    text-decoration: none;
+}
 .service-container:hover .service-img img{
     transform: scale(1);
 
     transition: width 1s, height 2s, background-color 2s, transform 1s;
    
+}
+
+.dental-container{
+    margin: auto;
+    /* color: black; */
+    height: auto;
+    width: 100%;
+    /* padding: 10px; */
+}
+/* .service-link{
+    padding: 20px;
+} */
+.dental-container .list-title h2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(231, 228, 228);
+    padding: 20px;
+    color: #251c0f;;
+}
+.dental-container .main-image img{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 220px;
+    width: 500px;
+    /* object-fit: cover; */
+    
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.dental-service-links{
+    margin-left: 30px;
+    text-align: center;
+
+}
+.dental-service-links h4{
+    color:rgb(82, 154, 199);
+    font-weight: bolder;
+}
+
+.dental-service-links a{
+    text-decoration: none;
+    color: rgb(15, 83, 104);
+    font-weight: bold;
+}
+.dental-service-links a:hover{
+    color: rgb(46, 43, 43);
+}
+.implant-container{
+    width: 100%;
+    width: auto;
+    margin: 0 60px 0 60px;
+    position: relative;
+    align-content: center;
+}
+.implant-container h2{
+    padding: 50px;
+    text-align: center;
+}
+.implant-image img{
+    width: 100%;
+    height: 400px;
+    /* margin: 0 60px; */
+    align-content: center;
+    /* position:; */
+    
+}
+.implant-content{
+    position: inherit;
+    background-color: rgb(226, 223, 223);
+    margin-top: 30px;
+    
     
 
 }
+ .content-text {
+    padding: 20px;
+}
+/* .implant-content p{
+    padding: 20px;
+} */
+
+.implant-content h3{
+color:rgb(82, 154, 199);
+margin-left:30px ;
+padding-top: 30px;
+}
+
 
 
 
@@ -178,6 +267,9 @@ footer{
     img{
         height: 100vh;
         object-fit: cover;
+    }
+    .dental-container .main-image img{
+        display: none;
     }
 }
 @media (min-width: 768px) {
@@ -194,6 +286,10 @@ footer{
     .carousel-caption p{
         font-size: 20px;
     }
+    .dental-container .main-image img{
+        width: 300px;
+    }
+   
 }
 @media (max-width: 360px) {
     .carousel-caption{
