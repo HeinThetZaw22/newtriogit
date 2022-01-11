@@ -29,7 +29,6 @@
     /* height: 70px; */
 }
 .header-address{
-    
     padding: 0 20px;
     font-size: 12px;
     display: block;
@@ -76,8 +75,7 @@
     text-shadow: 1px 1px 2px #fff;
 }
 .carousel-inner img{
-    opacity: 0.5;
-
+    opacity: 0.6;
 }
 
 .carousel-caption{
@@ -134,7 +132,6 @@ footer{
 }
 
 .sevice-img{
-    
     color: rgb(218, 146, 146);
     border:2px solid;
     /* background: chartreuse; */
@@ -152,7 +149,6 @@ footer{
     border-top-right-radius: 10px;
     transition: 0.1s;
     transform: scale(0.9);
-    
 }
 
 .service-content{
@@ -163,15 +159,41 @@ footer{
 }
 .service-container:hover .service-img img{
     transform: scale(1);
-
     transition: width 1s, height 2s, background-color 2s, transform 1s;
-   
-    
-
 }
-
-
-
+#blog{
+    background-color: #fff;
+ }
+ #blog .blog-heading{
+     padding-top: 50px;
+ }
+ #blog .blog-box .pad{
+     
+     display: flex;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 20px;
+ }
+ #blog .blog-container {
+    margin: 10px;
+ }
+ #blog .blog-container .blog-content{
+     margin: auto;
+     padding: 15px 10px;
+     width: 90%;
+ }
+ #blog .blog-container img{
+     width: 100%;
+     height: auto;
+ }
+ #blog .art{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 25px;
+ }
 
 /*responsive*/
 @media (max-width: 768px) {
