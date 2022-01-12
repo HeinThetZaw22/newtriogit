@@ -5,15 +5,20 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
+:root{
+  --main-color-: #22577E;
+  --bg-color-: #5584AC;
+  --another-color-:  #95D1CC;
+  --extra-color-: #F6F2D4;
+}
 .header-area{
     width: 100%;
-    background-image: linear-gradient(to right, #7eb5c5, rgb(56, 67, 71));
+    background-color: var(--main-color-);
     /* height: 60px; */
     padding: 10px 0;
 }
 .header-area .social-media a{
-    color: rgb(174, 228, 207);
+    color: #fff;
     padding: 0 7px;
     margin-left: 30px;
 }
@@ -22,10 +27,10 @@
     padding: 0 15px;
 } */
 .header-area .social-media a:hover{
-    color: rgb(83, 83, 121);
+    color: rgb(163, 180, 182);
 }
 .navbar{
-    background-image: linear-gradient(to right, #7eb5c5, rgb(56, 67, 71));
+    background-color: var(--main-color-);
     /* height: 70px; */
 }
 .header-address{
@@ -43,18 +48,27 @@
     text-decoration: none;
     padding: 10px;
 }
-.navbar .navbar-brand{
-    color: rgb(255, 255, 255);
-    outline: 2px solid #7eb5;
-    box-shadow: 5px 5px #888888;
-    margin-left: 20px;
-    padding: 0px 10px;
-    border-radius: 25px;
+/* .navbar .navbar-brand{
+   width: 20px;
+   height: auto;
+} */
+.navbar .logo img{
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+}
+.navbar .logo .name{
+    font-size: 30px;
 }
 .navbar-nav a{
     color: #fff !important;
    margin-right: 25px;
+   border: 2px solid var(--main-color-);
 }
+.navbar-nav a:hover{
+  border-bottom: 2px solid #fff;
+}
+
 .navbar-nav .appoint{
     outline: 2px solid #7eb5;
     padding: 10px;
@@ -67,15 +81,13 @@
     background-size: cover;
 }
 .carousel-item .carousel-caption h5{
-    color: #153dac;
-    text-shadow: 3px 3px 4px #fff;
+    color: var(--main-color-);
 }
 .carousel-item .carousel-caption p{
-    color: #153dac;
-    text-shadow: 1px 1px 2px #fff;
+    color: var(--main-color-);
 }
 .carousel-inner img{
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .carousel-caption{
@@ -99,7 +111,7 @@
     padding: 10px;
 }
 footer{
-    background-color: #5f828d;
+    background-color: var(--main-color-);
     color: #d5d5d5;
     padding: 2rem 0;
 }
@@ -166,7 +178,7 @@ footer{
 }
 #blog{
     background-color: #fff;
- }
+}
  #blog .blog-heading{
      padding-top: 50px;
  }
