@@ -22,16 +22,8 @@
     padding: 0 7px;
     margin-left: 30px;
 }
-
-/* .header-area .social-media{
-    padding: 0 15px;
-} */
 .header-area .social-media a:hover{
     color: rgb(163, 180, 182);
-}
-.navbar{
-    background-color: var(--main-color-);
-    /* height: 70px; */
 }
 .header-address{
     padding: 0 20px;
@@ -48,17 +40,67 @@
     text-decoration: none;
     padding: 10px;
 }
-/* .navbar .navbar-brand{
-   width: 20px;
-   height: auto;
-} */
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    z-index: 3;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 10px;
+}
+.modal-content .fa-file-signature{
+    font-size: 30px;
+    padding: 0 10px;
+    color: var(--main-color-);
+}
+.modal-content .btn{
+    margin-left: 100px;
+}
+.modal-content p{
+   margin-top: 20px;
+    margin-left: 40px;
+    font-size: 10px;
+    font-weight: 600;
+}
+ input{
+   width: 50%;
+   display:block;
+   padding: 0 7px;
+   margin: 30px auto;
+   outline: 2px solid var(--main-color-);
+}  
+.close{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+} 
+.navbar{
+    background-color: var(--main-color-);
+    position: relative;
+}
 .navbar .logo img{
     width: 50px;
     height: auto;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 .navbar .logo .name{
-    font-size: 30px;
+    font-size: 25px;
 }
 .navbar-nav a{
     color: #fff !important;
@@ -68,12 +110,17 @@
 .navbar-nav a:hover{
   border-bottom: 2px solid #fff;
 }
-
+.navbar-nav .appoint:hover{
+    outline: 2px solid white;
+}
 .navbar-nav .appoint{
     outline: 2px solid #7eb5;
     padding: 10px;
     border-radius: 15px;
     /* box-shadow: 3px 3px #888888; */
+}
+#about{
+    background-color: var(--extra-color-);
 }
 .carousel-item{
     height: 100vh;
@@ -117,6 +164,21 @@ footer{
 }
 #contact .mar{
     margin-bottom: 60px;
+    font-weight: 600;
+}
+#contact .fa-facebook{
+    color: #3b5998;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#contact .fa-twitter{
+    color: #55acee;
+}
+#contact .fa-google{
+  color: #fff;
+}
+#contact .fa-youtube{
+    color: #e91d1d;
 }
 #contact .mar .a-line .icon-s{
     font-size: 2.5em;
@@ -177,7 +239,7 @@ footer{
     transition: width 1s, height 2s, background-color 2s, transform 1s;
 }
 #blog{
-    background-color: #fff;
+    background-color: var(--another-color-);
 }
  #blog .blog-heading{
      padding-top: 50px;
