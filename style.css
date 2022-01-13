@@ -5,15 +5,20 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
+:root{
+  --main-color-: #22577E;
+  --bg-color-: #5584AC;
+  --another-color-:  #95D1CC;
+  --extra-color-: #F6F2D4;
+}
 .header-area{
     width: 100%;
-    background-image: linear-gradient(to right, #7eb5c5, rgb(56, 67, 71));
+    background-color: var(--main-color-);
     /* height: 60px; */
     padding: 10px 0;
 }
 .header-area .social-media a{
-    color: rgb(174, 228, 207);
+    color: #fff;
     padding: 0 7px;
     margin-left: 30px;
 }
@@ -22,14 +27,13 @@
     padding: 0 15px;
 } */
 .header-area .social-media a:hover{
-    color: rgb(83, 83, 121);
+    color: rgb(163, 180, 182);
 }
 .navbar{
-    background-image: linear-gradient(to right, #7eb5c5, rgb(56, 67, 71));
+    background-color: var(--main-color-);
     /* height: 70px; */
 }
 .header-address{
-    
     padding: 0 20px;
     font-size: 12px;
     display: block;
@@ -44,18 +48,27 @@
     text-decoration: none;
     padding: 10px;
 }
-.navbar .navbar-brand{
-    color: rgb(255, 255, 255);
-    outline: 2px solid #7eb5;
-    box-shadow: 5px 5px #888888;
-    margin-left: 20px;
-    padding: 0px 10px;
-    border-radius: 25px;
+/* .navbar .navbar-brand{
+   width: 20px;
+   height: auto;
+} */
+.navbar .logo img{
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+}
+.navbar .logo .name{
+    font-size: 30px;
 }
 .navbar-nav a{
     color: #fff !important;
    margin-right: 25px;
+   border: 2px solid var(--main-color-);
 }
+.navbar-nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+
 .navbar-nav .appoint{
     outline: 2px solid #7eb5;
     padding: 10px;
@@ -68,16 +81,13 @@
     background-size: cover;
 }
 .carousel-item .carousel-caption h5{
-    color: #153dac;
-    text-shadow: 3px 3px 4px #fff;
+    color: var(--main-color-);
 }
 .carousel-item .carousel-caption p{
-    color: #153dac;
-    text-shadow: 1px 1px 2px #fff;
+    color: var(--main-color-);
 }
 .carousel-inner img{
-    opacity: 0.5;
-
+    opacity: 0.7;
 }
 
 .carousel-caption{
@@ -101,7 +111,7 @@
     padding: 10px;
 }
 footer{
-    background-color: #5f828d;
+    background-color: var(--main-color-);
     color: #d5d5d5;
     padding: 2rem 0;
 }
@@ -134,7 +144,6 @@ footer{
 }
 
 .sevice-img{
-    
     color: rgb(218, 146, 146);
     border:2px solid;
     /* background: chartreuse; */
@@ -152,7 +161,6 @@ footer{
     border-top-right-radius: 10px;
     transition: 0.1s;
     transform: scale(0.9);
-    
 }
 
 .service-content{
@@ -161,42 +169,174 @@ footer{
     /* border: 2px rgb(248, 246, 246) solid; */
     /* box-shadow: 5px 5px rgb(245, 242, 242); */
 }
+.service-content a{
+    text-decoration: none;
+}
 .service-container:hover .service-img img{
     transform: scale(1);
-
     transition: width 1s, height 2s, background-color 2s, transform 1s;
-   
+}
+#blog{
+    background-color: #fff;
+}
+ #blog .blog-heading{
+     padding-top: 50px;
+ }
+ #blog .blog-box .pad{
+     
+     display: flex;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 20px;
+ }
+ #blog .blog-container {
+    margin: 10px;
+ }
+ #blog .blog-container .blog-content{
+     margin: auto;
+     padding: 15px 10px;
+     width: 90%;
+ }
+ #blog .blog-container img{
+     width: 100%;
+     height: auto;
+ }
+ #blog .art{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 25px;
+ }
+ #about h1{
+     background-color: #22577E;
+     font-weight: bold;
+ }
+ #about{
+     background-image: linear-gradient(to right, var(--another-color-), var(--bg-color-));
+ }
+
+.dental-container{
+    margin: auto;
+    /* color: black; */
+    height: auto;
+    width: 100%;
+    /* padding: 10px; */
+}
+/* .service-link{
+    padding: 20px;
+} */
+.dental-container .list-title h2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(231, 228, 228);
+    padding: 20px;
+    color: #251c0f;;
+}
+.dental-container .main-image img{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 220px;
+    width: 500px;
+    /* object-fit: cover; */
+    
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.dental-service-links{
+    margin-left: 30px;
+    text-align: center;
+
+}
+.dental-service-links h4{
+    color:rgb(82, 154, 199);
+    font-weight: bolder;
+}
+
+.dental-service-links a{
+    text-decoration: none;
+    color: rgb(15, 83, 104);
+    font-weight: bold;
+}
+.dental-service-links a:hover{
+    color: rgb(46, 43, 43);
+}
+.implant-container{
+    width: 100%;
+    width: auto;
+    margin: 0 60px 0 60px;
+    position: relative;
+    align-content: center;
+}
+.implant-container h2{
+    padding: 50px;
+    text-align: center;
+}
+.implant-image img{
+    width: 100%;
+    height: 400px;
+    /* margin: 0 60px; */
+    align-content: center;
+    /* position:; */
+    
+}
+.implant-content{
+    position: inherit;
+    background-color: rgb(226, 223, 223);
+    margin-top: 30px;
+    
     
 
 }
-
-
-
-
-/*responsive*/
-@media (max-width: 768px) {
-    img{
-        height: 100vh;
-        object-fit: cover;
-    }
+ .content-text {
+    padding: 20px;
 }
-@media (min-width: 768px) {
-    img{
-        height: 100vh;
-        object-fit: cover;
+/* .implant-content p{
+    padding: 20px;
+} */
+
+.implant-content h3{
+    color:rgb(82, 154, 199);
+    margin-left:30px ;
+    padding-top: 30px;
     }
-    .carousel-caption{
-        top: 400px;
+    
+    
+    /*responsive*/
+    @media (max-width: 768px) {
+        img{
+            height: 100vh;
+            object-fit: cover;
+        }
+        .dental-container .main-image img{
+            display: none;
+        }
     }
-    .carousel-caption h5{
-        font-size: 40px;
+    @media (min-width: 768px) {
+        img{
+            height: 100vh;
+            object-fit: cover;
+        }
+        .carousel-caption{
+            top: 400px;
+        }
+        .carousel-caption h5{
+            font-size: 40px;
+        }
+        .carousel-caption p{
+            font-size: 20px;
+        }
+        .dental-container .main-image img{
+            width: 300px;
+        }
+       
     }
-    .carousel-caption p{
-        font-size: 20px;
+    @media (max-width: 360px) {
+        .carousel-caption{
+            top: 200px;
+        }
     }
-}
-@media (max-width: 360px) {
-    .carousel-caption{
-        top: 200px;
-    }
-}
+    
