@@ -17,7 +17,7 @@
     /* height: 60px; */
     padding: 10px 0;
 }
-.header-area .social-media a{
+.social-media a{
     color: #fff;
     padding: 0 7px;
     margin-left: 30px;
@@ -25,18 +25,26 @@
 .header-area .social-media a:hover{
     color: rgb(163, 180, 182);
 }
-.header-address{
+
+
+.navbar{
+    background-color: var(--main-color-);
+    /* height: 70px; */
+}
+.header-address a{
+
     padding: 0 20px;
     font-size: 12px;
-    display: block;
+    /* display: block; */
+    
 }
 .header-email a{
-    color: rgb(123, 155, 197);
+  
     text-decoration: none;
     padding: 10px;
 }
 .header-phone a{
-    color: rgb(123, 155, 197);
+    
     text-decoration: none;
     padding: 10px;
 }
@@ -107,16 +115,24 @@
    margin-right: 25px;
    border: 2px solid var(--main-color-);
 }
-.navbar-nav a:hover{
+
+/* .navbar-nav a:hover:not(.appoint){
   border-bottom: 2px solid #fff;
-}
+} */
 .navbar-nav .appoint:hover{
-    outline: 2px solid white;
+    outline: 3px solid #fff;
+    border-bottom: 2px solid var(--main-color-);
+   
+   
+
 }
+
+
 .navbar-nav .appoint{
     outline: 2px solid #7eb5;
     padding: 10px;
     border-radius: 15px;
+   
     /* box-shadow: 3px 3px #888888; */
 }
 #about{
@@ -150,6 +166,10 @@
     font-weight: 800;
     letter-spacing: 0.5cm;
 }
+
+.carousel-inner .slider-learnmore{
+    text-decoration: none;
+}
 #team .item img{
     height: 250px;
     object-fit: cover;
@@ -161,6 +181,13 @@ footer{
     background-color: var(--main-color-);
     color: #d5d5d5;
     padding: 2rem 0;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(121, 151, 179);
 }
 #contact .mar{
     margin-bottom: 60px;
@@ -185,7 +212,8 @@ footer{
     padding: 3rem;
 }
 .service-area{
-    width: 80%;
+    width: 90%;
+    
     margin: auto;
     /* height: 100vh; */
     /* position: relative; */
@@ -196,6 +224,7 @@ footer{
     /* background-color: rgb(177, 153, 153); */
     /* padding: 15px; */
     /* width: 70%; */
+
     position: relative;
     align-items: center;
     text-align: center;
@@ -203,6 +232,11 @@ footer{
     background: #fff;
    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
    margin-bottom: 40px;
+}
+.service-container h5{
+    color:var(--main-color-);
+    font-weight: bolder;
+
 }
 
 .sevice-img{
@@ -234,12 +268,16 @@ footer{
 .service-content a{
     text-decoration: none;
 }
+.service-content a:hover{
+    color:rgb(14, 14, 15);
+    
+}
 .service-container:hover .service-img img{
     transform: scale(1);
     transition: width 1s, height 2s, background-color 2s, transform 1s;
 }
 #blog{
-    background-color: var(--another-color-);
+    background-color: #fff;
 }
  #blog .blog-heading{
      padding-top: 50px;
@@ -272,7 +310,8 @@ footer{
      padding-top: 25px;
  }
 
-.dental-container{
+.dental-container .eyecare-container{
+    /* background-color: rgb(218, 193, 184); */
     margin: auto;
     /* color: black; */
     height: auto;
@@ -296,7 +335,8 @@ footer{
     margin-left: 20px;
     height: 220px;
     width: 500px;
-    /* object-fit: cover; */
+    object-fit: cover;
+    
     
     padding-top: 30px;
     padding-left: 20px;
@@ -319,7 +359,7 @@ footer{
 .dental-service-links a:hover{
     color: rgb(46, 43, 43);
 }
-.implant-container{
+.implant-container {
     width: 100%;
     width: auto;
     margin: 0 60px 0 60px;
@@ -348,7 +388,9 @@ footer{
 }
  .content-text {
     padding: 20px;
+
 }
+
 /* .implant-content p{
     padding: 20px;
 } */
@@ -359,6 +401,16 @@ margin-left:30px ;
 padding-top: 30px;
 }
 
+.eyecare-container .list-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #284737;
+    padding: 20px;
+    color: #fff;
+
+
+}
 
 /*responsive*/
 @media (max-width: 768px) {
@@ -369,7 +421,27 @@ padding-top: 30px;
     .dental-container .main-image img{
         display: none;
     }
+    /* .header-area .social-media {
+        margin-left: 70px;
+        padding: 0;
+        
+    } */
+    /* .header-address {
+        
+        margin-right: 60px;
+        margin-top: 15px;
+        
+
+    } */
+    /* .logo{
+        padding: 10px;
+    } */
 }
+
+
+
+
+
 @media (min-width: 768px) {
     img{
         height: 100vh;
