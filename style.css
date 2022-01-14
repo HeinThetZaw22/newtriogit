@@ -11,13 +11,22 @@
   --another-color-:  #95D1CC;
   --extra-color-: #F6F2D4;
 }
+#header .appo .appoint{
+    color: white;
+    outline: 2px solid #7eb5;
+    padding: 10px;
+    border-radius: 15px;
+}
+#header .appo .appoint:hover{
+        outline: 3px solid #fff;
+}
 .header-area{
     width: 100%;
     background-color: var(--main-color-);
-    /* height: 60px; */
     padding: 10px 0;
+    position: relative;
 }
-.header-area .social-media a{
+.social-media a{
     color: #fff;
     padding: 0 7px;
     margin-left: 30px;
@@ -25,20 +34,17 @@
 .header-area .social-media a:hover{
     color: rgb(163, 180, 182);
 }
-.header-address{
+.header-address a{
     padding: 0 20px;
     font-size: 12px;
-    display: block;
 }
 .header-email a{
-    color: rgb(123, 155, 197);
     text-decoration: none;
-    padding: 10px;
+    padding: 0 10px;
 }
 .header-phone a{
-    color: rgb(123, 155, 197);
     text-decoration: none;
-    padding: 10px;
+    padding: 0 10px;
 }
 .bg-modal{
     width: 100%;
@@ -90,14 +96,12 @@
     cursor: pointer;
 } 
 .navbar{
-    background-color: var(--main-color-);
-    position: relative;
+    background-color: var(--main-color-); 
 }
 .navbar .logo img{
     width: 50px;
     height: auto;
     margin-left: 20px;
-    margin-bottom: 10px;
 }
 .navbar .logo .name{
     font-size: 25px;
@@ -107,17 +111,8 @@
    margin-right: 25px;
    border: 2px solid var(--main-color-);
 }
-.navbar-nav a:hover{
-  border-bottom: 2px solid #fff;
-}
-.navbar-nav .appoint:hover{
-    outline: 2px solid white;
-}
-.navbar-nav .appoint{
-    outline: 2px solid #7eb5;
-    padding: 10px;
-    border-radius: 15px;
-    /* box-shadow: 3px 3px #888888; */
+.navbar-nav li a:hover{
+    border-bottom: 2px solid #fff;
 }
 #about{
     background-color: var(--extra-color-);
@@ -132,13 +127,14 @@
 }
 .carousel-item .carousel-caption p{
     color: var(--main-color-);
+    font-weight: 600;
+    font-size: 20px;
 }
 .carousel-inner img{
-    opacity: 0.7;
+    opacity: 0.8;
 }
-
 .carousel-caption{
-    top: 250px;
+    top: 200px;
 }
 .carousel-caption p{
     width: 80%;
@@ -147,8 +143,25 @@
 }
 .carousel-caption h5{
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 0.5cm;
+}
+.carousel-inner .slider-learnmore{
+    text-decoration: none;
+}
+#about{
+    height: 100%;
+}
+#about .container .onegp{
+    margin: 15px auto;
+    padding-bottom: 20px;
+}
+#about .container .para{
+    padding: 20px;
+}
+#about .container img{
+    width: 400px;
+    height: auto;
 }
 #team .item img{
     height: 250px;
@@ -161,6 +174,13 @@ footer{
     background-color: var(--main-color-);
     color: #d5d5d5;
     padding: 2rem 0;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(121, 151, 179);
 }
 #contact .mar{
     margin-bottom: 60px;
@@ -185,30 +205,26 @@ footer{
     padding: 3rem;
 }
 .service-area{
-    width: 80%;
+    width: 90%;
     margin: auto;
-    /* height: 100vh; */
-    /* position: relative; */
-    /* background: rgb(237, 238, 236); */  
 }
-
 .service-container{
-    /* background-color: rgb(177, 153, 153); */
-    /* padding: 15px; */
-    /* width: 70%; */
+    width: 350px;
+    height: auto;
     position: relative;
     align-items: center;
     text-align: center;
-    /* padding: 15px; */
     background: #fff;
    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
-   margin-bottom: 40px;
+   margin: 10px auto;
 }
-
+.service-container h5{
+    color:var(--main-color-);
+    font-weight: bolder;
+}
 .sevice-img{
     color: rgb(218, 146, 146);
     border:2px solid;
-    /* background: chartreuse; */
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -224,28 +240,27 @@ footer{
     transition: 0.1s;
     transform: scale(0.9);
 }
-
 .service-content{
     position: inherit;
     padding:10px;
-    /* border: 2px rgb(248, 246, 246) solid; */
-    /* box-shadow: 5px 5px rgb(245, 242, 242); */
 }
 .service-content a{
     text-decoration: none;
+}
+.service-content a:hover{
+    color:rgb(14, 14, 15);
 }
 .service-container:hover .service-img img{
     transform: scale(1);
     transition: width 1s, height 2s, background-color 2s, transform 1s;
 }
 #blog{
-    background-color: var(--another-color-);
+    background-color: #fff;
 }
  #blog .blog-heading{
      padding-top: 50px;
  }
  #blog .blog-box .pad{
-     
      display: flex;
      height: auto;
      display: flex;
@@ -254,12 +269,12 @@ footer{
      margin: 0 20px;
  }
  #blog .blog-container {
-    margin: 10px;
+    margin: 10px auto;
  }
  #blog .blog-container .blog-content{
      margin: auto;
      padding: 15px 10px;
-     width: 90%;
+     width: 90%; 
  }
  #blog .blog-container img{
      width: 100%;
@@ -271,17 +286,11 @@ footer{
      align-items: center;
      padding-top: 25px;
  }
-
-.dental-container{
+.dental-container .eyecare-container{
     margin: auto;
-    /* color: black; */
     height: auto;
     width: 100%;
-    /* padding: 10px; */
 }
-/* .service-link{
-    padding: 20px;
-} */
 .dental-container .list-title h2{
     width: 100%;
     height: auto;
@@ -291,26 +300,22 @@ footer{
     color: #251c0f;;
 }
 .dental-container .main-image img{
-    
     margin-top: 10px;
     margin-left: 20px;
     height: 220px;
     width: 500px;
-    /* object-fit: cover; */
-    
+    object-fit: cover;
     padding-top: 30px;
     padding-left: 20px;
 }
 .dental-service-links{
     margin-left: 30px;
     text-align: center;
-
 }
 .dental-service-links h4{
     color:rgb(82, 154, 199);
     font-weight: bolder;
 }
-
 .dental-service-links a{
     text-decoration: none;
     color: rgb(15, 83, 104);
@@ -319,7 +324,7 @@ footer{
 .dental-service-links a:hover{
     color: rgb(46, 43, 43);
 }
-.implant-container{
+.implant-container {
     width: 100%;
     width: auto;
     margin: 0 60px 0 60px;
@@ -333,32 +338,29 @@ footer{
 .implant-image img{
     width: 100%;
     height: 400px;
-    /* margin: 0 60px; */
     align-content: center;
-    /* position:; */
-    
 }
 .implant-content{
     position: inherit;
     background-color: rgb(226, 223, 223);
     margin-top: 30px;
-    
-    
-
 }
  .content-text {
     padding: 20px;
 }
-/* .implant-content p{
-    padding: 20px;
-} */
-
 .implant-content h3{
 color:rgb(82, 154, 199);
 margin-left:30px ;
 padding-top: 30px;
 }
-
+.eyecare-container .list-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #284737;
+    padding: 20px;
+    color: #fff;
+}
 
 /*responsive*/
 @media (max-width: 768px) {
@@ -387,7 +389,6 @@ padding-top: 30px;
     .dental-container .main-image img{
         width: 300px;
     }
-   
 }
 @media (max-width: 360px) {
     .carousel-caption{

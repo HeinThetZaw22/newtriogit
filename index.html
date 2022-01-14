@@ -19,8 +19,8 @@
 
 </head>
 <body>
-  <!-- header -->
-  <header>
+    <!-- header -->
+  <header id="header">
     <div class="header-area">
       <div class="header-top">
         <div class="row">
@@ -31,7 +31,8 @@
               <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
          </div>
-          <div class="col-md-6 d-flex d-block px-2 justify-content-end">
+          <div class="col-md-6 appo d-flex d-block justify-content-end">
+            <a class="nav-link active" href="#" id= "button" class ="button"><span class="appoint">Appointment</span></a>
             <div class="header-address">
               <div class="header-email">
               <a href="#"><i class="far fa-envelope text-white"></i><span class="text-white"> email - tb2healthservice@gmail.com</a></span>
@@ -44,8 +45,8 @@
       </div>
     </div>
     </header>
-  <!-- navigation bar -->
-  <nav class="navbar navbar-expand-md navbar-light ">
+    <!-- navigation bar -->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
     <div class="container-fluid">
       <div class="logo">
         <img src="image/healthcare.png">
@@ -72,14 +73,11 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#" id= "button" class ="button"><span class="appoint">Appointment</span></a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- modal section -->
+    <!-- modal section -->
     <div class="bg-modal">
         <div class="modal-content">
           <div class="close">+</div>
@@ -95,8 +93,6 @@
           </form>
       </div>
     </div>
-  
-
     <!-- Home slider -->
     <section id="main-slide">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -107,26 +103,29 @@
         </div>
         <div class="carousel-inner">
           <div class=" carousel-item active">
-            <img src="image/3.jpg" class="d-block w-100" alt="...">
+            <img src="image/11.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption ">
               <h5 class="animate__animated animate__backInLeft animate__delay-1s">Welcome to</h5>
               <p class="animate__animated animate__backInRight animate__delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi s quibusdam atque, ut possimus deserunt quo bnihil accusamus obcaecati!</p>
             </div>
           </div>
           <div class="  carousel-item">
-            <img src="image/3.jpg" class="d-block w-100" alt="...">
+            <img src="https://images.pexels.com/photos/9317179/pexels-photo-9317179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" alt="...">
             <div class="carousel-caption ">
-              <h5 class="animate__animated animate__bounceInDown animate__delay-1s" >our web service</h5>
+              <h5 class="animate__animated animate__bounceInDown animate__delay-1s" >Our Service</h5>
               <p  class="animate__animated animate__bounceInUp animate__delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi s quibusdam atque, ut possimus deserunt quo bnihil accusamus obcaecati!</p>
+              
             </div>
           </div>
           <div class=" carousel-item">
-            <img src="image/7.jfif" class="d-block w-100" alt="...">
+            <img src="image/corona2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption ">
-              <h5  class="animate__animated animate__zoomIn animate__delay-1s">Thank you</h5>
+              <h5  class="animate__animated animate__zoomIn animate__delay-1s">Covid-19 Health Tips</h5>
               <p  class="animate__animated animate__zoomInUp animate__delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi s quibusdam atque, ut possimus deserunt quo bnihil accusamus obcaecati!</p>
             </div>
           </div>
+
+          
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -138,7 +137,6 @@
         </button>
       </div>
     </section> 
-
      <!--article post -->
      <section id="blog">
       <div class="blog-heading">
@@ -206,15 +204,13 @@
             </div>
           </div>
       </div>
-  </section>
+    </section>
     <!-- Services-->
     <section id="service">
       <div class="service-area ">
         <h2 class="text-center fw-bold p-3">Our Services</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-
     <div class="row p-2">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex">
             <div class="service-container">
                <div class="service-img">
                    <img src="https://images.pexels.com/photos/3779709/pexels-photo-3779709.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image">
@@ -222,7 +218,7 @@
                </div>
                <div class="service-content">
                    <h5>Dental Care</h5>
-                   <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, error!</P>
+                   <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, error! </P>
                    <a class="dental-learnmore" href="dental-care.html" target="_blank"> Learn more</a>
                </div>
 
@@ -236,7 +232,7 @@
                     
                 </div>
                 <div class="service-content">
-                    <h2>Eye Care</h2>
+                    <h5>Eye Care</h5>
                     <P>Our eye care center offers a full range of eye health services to clients of all..</P>
                     <a class="learnmore" href="eye-care.html" target="_blank"> Learn more</a>
                 </div>
@@ -305,25 +301,24 @@
     </section>
     <!-- about -->
   <section id="about">
-
     <div class="container">
-       <h1 class="text-center fw-bold py-5">About us</h1>
-      <div class="row">
-            <div class="col-md-6">
-                <img src="image/1.jpg" alt="" class="img-fluid rounded-circle w-75 float-start">
+       <h1 class="text-center fw-bold pt-5">About us</h1>
+      <div class="row onegp">
+            <div class="col-md-6 text-center m-auto">
+                <img src="image/1.jpg" alt="" class="img-fluid rounded-circle">
             </div>
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 para m-auto">
                 <h2 class="text-center fs-1">We Take Care of Your Health</h2>
                 <p class="fs-6 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eos quae neque repellat officia excepturi expedita porro nam voluptatibus rerum, dolores aperiam, odit nemo error aut? Sed quam molestias dolores.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 float-end mt-5">
+        <div class="row onegp">
+            <div class="col-md-6 para m-auto">
                 <h2 class="text-center fs-1">Our Purpose</h2>
                 <p class="fs-6 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eos quae neque repellat officia excepturi expedita porro nam voluptatibus rerum, dolores aperiam, odit nemo error aut? Sed quam molestias dolores.</p>
             </div>
-            <div class="col-md-6 mt-4">
-                <img src="image/9.jpg" alt="" class="img-fluid rounded-circle w-75 float-end">
+            <div class="col-md-6 text-center m-auto">
+                <img src="image/9.jpg" alt="" class="img-fluid rounded-circle">
             </div>
         </div>
     </div>
@@ -414,17 +409,18 @@
             <hr class="light">
             <h3>Departments</h3>
             <hr class="light">
-            <p>Eye Care</p>
-            <p> Skin Care</p>
-            <p>Dental </p>
+            <a href="dental-care.html"><p>Dental Care</p></a>
+            <a href="eye-care.html"><p>Eye Care</p></a>
+            <a href="#"><p> Skin Care</p></a>
+            <a href="#"><p>Dental </p></a>
           </div>
           <div class="col-md-3">
             <hr class="light">
             <h3>Useful Links</h3>
             <hr class="light">
-            <p>About</p>
-            <p>Appointment</p>
-            <p>Contact</p>
+            <a href="#about"><p>About</p></a>
+            <a href="#header"><p>Appointment</p></a>
+            <a href="#header"><p>Contact</p></a>
           </div>
           <div class="col-md-3">
             <hr class="light">
