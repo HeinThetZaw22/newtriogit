@@ -279,6 +279,7 @@ footer a:hover{
  #blog .blog-container img{
      width: 100%;
      height: auto;
+     max-height: 200px;
  }
  #blog .art{
      display: flex;
@@ -337,7 +338,7 @@ footer a:hover{
 }
 .implant-image img{
     width: 100%;
-    height: 400px;
+    height: auto;
     align-content: center;
 }
 .implant-content{
