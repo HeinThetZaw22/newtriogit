@@ -116,23 +116,28 @@
    border: 2px solid var(--main-color-);
 }
 
-/* .navbar-nav a:hover:not(.appoint){
-  border-bottom: 2px solid #fff;
-} */
-.navbar-nav .appoint:hover{
-    outline: 3px solid #fff;
-    border-bottom: 2px solid var(--main-color-);
-   
-   
-
+.navbar-nav a:hover{
+    border-bottom: 2px solid #fff;
 }
 
+/* .navbar-nav a:not(.active):hover{
+  border-bottom: 2px solid #fff;
+} */
+.navbar-nav .appoint-class{
+    width: 150px;
+}
+.navbar-nav .appoint-class  a:hover{
+    border-radius:15px ;
+    width: auto;
+    outline: 3px solid #fff;
+    border-bottom: 2px solid var(--main-color-);
+    
+}
 
-.navbar-nav .appoint{
+.navbar-nav .appoint-class a{
     outline: 2px solid #7eb5;
     padding: 10px;
-    border-radius: 15px;
-   
+    border-radius: 15px; 
     /* box-shadow: 3px 3px #888888; */
 }
 #about{
