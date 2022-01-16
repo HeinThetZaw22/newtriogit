@@ -101,7 +101,7 @@
 .navbar .logo img{
     width: 50px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .navbar .logo .name{
     font-size: 25px;
@@ -113,9 +113,6 @@
 }
 .navbar-nav li a:hover{
     border-bottom: 2px solid #fff;
-}
-#about{
-    background-color: var(--extra-color-);
 }
 .carousel-item{
     height: 100vh;
@@ -151,24 +148,44 @@
 }
 #about{
     height: 100%;
+    background-image: linear-gradient(var(--another-color-), var(--extra-color-));
 }
-#about .container .onegp{
+#about .container-fluid .onegp{
     margin: 15px auto;
     padding-bottom: 20px;
 }
-#about .container .para{
+#about .container-fluid .para{
     padding: 20px;
 }
-#about .container img{
-    width: 400px;
+#about .container-fluid img{
+    width: 350px;
     height: auto;
 }
+#team{
+    background-color: var(--another-color-);
+}
+#team .item .img-bg{
+    height: 160px;
+    background-image: linear-gradient(var(--main-color-), var(--another-color-), var(--extra-color-));
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 100%, 74% 75%, 50% 100%, 25% 75%, 0 100%);
+}
 #team .item img{
-    height: 250px;
+    width: 150px;
+   height: 150px;
+   border-radius: 50%;
     object-fit: cover;
+    position: absolute;
+    bottom: -50px;
 }
 #team .owl-carousel .item{
     padding: 10px;
+}
+#team .owl-carousel .item:hover{
+    transform: scale(1.03);
 }
 footer{
     background-color: var(--main-color-);
@@ -201,7 +218,7 @@ footer a:hover{
     color: #e91d1d;
 }
 #contact .mar .a-line .icon-s{
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 3rem;
 }
 .service-area{
@@ -215,8 +232,9 @@ footer a:hover{
     align-items: center;
     text-align: center;
     background: #fff;
-   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+   box-shadow:  2px 2px 10px var(--main-color-);
    margin: 10px auto;
+   border-radius: 5px;
 }
 .service-container h5{
     color:var(--main-color-);
@@ -271,6 +289,10 @@ footer a:hover{
  #blog .blog-container {
     margin: 10px auto;
  }
+ #blog .blog-container:hover{
+     transform: scale(0.94);
+     outline: 1px solid var(--main-color-);
+ }
  #blog .blog-container .blog-content{
      margin: auto;
      padding: 15px 10px;
@@ -280,12 +302,6 @@ footer a:hover{
      width: 100%;
      height: auto;
      max-height: 200px;
- }
- #blog .art{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding-top: 25px;
  }
 .dental-container .eyecare-container{
     margin: auto;
