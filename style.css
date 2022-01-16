@@ -10,6 +10,23 @@
   --bg-color-: #5584AC;
   --another-color-:  #95D1CC;
   --extra-color-: #F6F2D4;
+  --white-color: #fff;
+  --black-color: #000;
+}
+.dark-theme{
+    --main-color-: #000;
+  --bg-color-: #fff;
+  --another-color-: #000;
+  --extra-color-: #0000;
+  --white-color-: #000;
+  --black-color: #fff;
+}
+#moon{
+    color: #fff;
+    width: 50px;
+    cursor: pointer;
+    background-color: rgba(144, 158, 189, 0.918);
+    border-radius: 15px;
 }
 #header .appo .appoint{
     color: white;
@@ -161,17 +178,25 @@
     width: 350px;
     height: auto;
 }
+#about .abname{
+    color: var(--black-color);
+}
+#about .para h2{
+    color: var(--black-color);
+}
+#about .para p{
+    color: var(--black-color);
+}
 #team{
-    background-color: var(--another-color-);
+    background-color: var(--bg-color-);
 }
 #team .item .img-bg{
     height: 160px;
-    background-image: linear-gradient(var(--main-color-), var(--another-color-), var(--extra-color-));
+    background-image: linear-gradient(45deg, var(--main-color-) 0%, var(--main-color-) 50%, var(--extra-color-)10%, var(--extra-color-)100%);
     display: flex;
     justify-content: center;
     position: relative;
     margin-bottom: 60px;
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 100%, 74% 75%, 50% 100%, 25% 75%, 0 100%);
 }
 #team .item img{
     width: 150px;
@@ -224,6 +249,10 @@ footer a:hover{
 .service-area{
     width: 90%;
     margin: auto;
+    background-color: var(--another-color-);
+}
+.service-area .sername{
+    color: var(--black-color);
 }
 .service-container{
     width: 350px;
@@ -273,7 +302,7 @@ footer a:hover{
     transition: width 1s, height 2s, background-color 2s, transform 1s;
 }
 #blog{
-    background-color: #fff;
+    background-color: var(--extra-color-);
 }
  #blog .blog-heading{
      padding-top: 50px;
