@@ -25,8 +25,11 @@
     color: #fff;
     width: 50px;
     cursor: pointer;
-    background-color: rgba(144, 158, 189, 0.918);
-    border-radius: 15px;
+     background-color: rgba(144, 158, 189, 0.918);
+     border-radius: 10px;
+}
+body{
+    overflow-x: hidden;
 }
 #header .appo .appoint{
     color: white;
@@ -167,28 +170,36 @@
     height: 100%;
     background-image: linear-gradient(var(--another-color-), var(--extra-color-));
 }
-#about .container-fluid .onegp{
-    margin: 15px auto;
+/* #about .container-fluid .onegp{
+    margin: 0 15px;
     padding-bottom: 20px;
-}
-#about .container-fluid .para{
+} */
+/* #about .container-fluid .para{
     padding: 20px;
-}
-#about .container-fluid img{
-    width: 350px;
+} */
+#about img{
+    width: 250px;
     height: auto;
+    margin-left: 25%;
 }
 #about .abname{
     color: var(--black-color);
 }
-#about .para h2{
+#about h1{
     color: var(--black-color);
 }
-#about .para p{
+#about  p{
+    color: var(--black-color);
+    width: 90%;
+}
+#about h4{
     color: var(--black-color);
 }
 #team{
     background-color: var(--bg-color-);
+}
+#team .doc{
+    color: var(--white-color-);
 }
 #team .item .img-bg{
     height: 160px;
@@ -197,6 +208,9 @@
     justify-content: center;
     position: relative;
     margin-bottom: 60px;
+}
+#team .pad2{
+    padding-bottom: 20px ;
 }
 #team .item img{
     width: 150px;
@@ -248,8 +262,8 @@ footer a:hover{
 }
 .service-area{
     width: 90%;
-    margin: auto;
-    background-color: var(--another-color-);
+    margin: 30px auto;
+    background-color: var(--white-color-);
 }
 .service-area .sername{
     color: var(--black-color);
@@ -263,7 +277,6 @@ footer a:hover{
     background: #fff;
    box-shadow:  2px 2px 10px var(--main-color-);
    margin: 10px auto;
-   border-radius: 5px;
 }
 .service-container h5{
     color:var(--main-color-);
@@ -317,6 +330,13 @@ footer a:hover{
  }
  #blog .blog-container {
     margin: 10px auto;
+ }
+ #blog .blog-container .btn{
+     background-color: #95D1CC;
+     color: #fff;
+ }
+ #blog .blog-container .btn:hover{
+     color: #000;
  }
  #blog .blog-container:hover{
      transform: scale(0.94);

@@ -13,5 +13,5 @@ document.getElementById('button').addEventListener('click',function(){
           moon.src = "image/sun.png";
       }else{
           moon.src = "image/moon.png";
-      }
   }
+}
