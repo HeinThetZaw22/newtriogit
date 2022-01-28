@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- header -->
-  <header id="header">
+ <header id="header">
     <div class="header-area">
       <div class="header-top">
         <div class="row">
@@ -45,9 +45,9 @@
           </div>
       </div>
     </div>
-    </header>
+    </header> 
     <!-- navigation bar -->
-  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+  <nav class=" navbar navbar-expand-md navbar-light sticky-top">
     <div class="container-fluid">
       <div class="logo">
         <img src="image/healthcare.png">
@@ -299,16 +299,15 @@
     </div>
     </section>
     <!-- about -->
-  <section id="about">
+    <section id="about">
     <div class="container-fluid">
       <h1 class="text-center fw-bold p-5">About us</h1>
      <div class="row pb-5">
-           <div data-aos="fade-right" data-aos-duration="800" class="col-md-6 py-5">
-                 <img src="image/1.jpg" alt="" class="img-fluid rounded-circle">
+           <div data-aos="fade-right" data-aos-duration="800" class="col-md-6 py-5 text-center">         
+            <img src="image/1.jpg" alt="" class="img-fluid rounded-circle">            
                  <h4 class="text-center py-3">We Take Care of Your Health</h4>
-                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eos quae neque repellat officia excepturi expedita porro nam voluptatibus rerum, dolores aperiam, odit nemo error aut? Sed quam molestias dolores.</p>
-            
-             </div>
+                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eos quae neque repellat officia excepturi expedita porro nam voluptatibus rerum, dolores aperiam, odit nemo error aut? Sed quam molestias dolores.</p>            
+                </div>
  
            <div data-aos="fade-left" data-aos-duration="700" class="col-md-6 m-auto py-5">
              <div class="accordion" id="accordionExample">
@@ -353,10 +352,9 @@
            </div>
      </div>
    </div>
-  </section>
-
+    </section>
     <!-- Doctors -->
-      <section id="team">
+    <section id="team">
       <div class="container-fluid pt-5">
         <h1 class="text-center fw-bold mb-4">Team's <span class="doc">Doctors</span></h1>
         <hr class="light">
@@ -370,6 +368,7 @@
                          <div class="card-body text-center">
                               <h4>Doctor Jun</h4>
                               <p>Eye specialist</p>
+                              <button type="button" class="btn" data-bs-toggle="popover" title="Doctor Jun(BOPTM)" data-bs-content="Jun is an eye specialist graduated from Stanford University and now he is working in our team.&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Degree of Dr.Jun- BOPTM, B.Sc)">more info</button>
                          </div>
                     </div>
                 </div>
@@ -381,6 +380,7 @@
                          <div class="card-body text-center">
                               <h4>Doctor Alex</h4>
                               <p>Eye surgeon</p>
+                              <button type="button" class="btn" data-bs-toggle="popover" title="Doctor Alex(BOPTM)" data-bs-content="Alex is an eye surgeon graduated from Yale University and now he is working in our team.&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Degree- BOPTM, B.Sc)">more info</button>
                          </div>
                     </div>
                 </div>
@@ -392,6 +392,7 @@
                          <div class="card-body text-center">
                               <h4>Doctor Joe</h4>
                               <p>Dentist</p>
+                              <button type="button" class="btn" data-bs-toggle="popover" title="Doctor Joe(DDS and DMD)" data-bs-content="Joe is a dentist graduated from Harvard University and now he is working in our team.&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Degree- BOPTM, B.Sc)">more info</button>
                          </div>
                     </div>
                 </div>
@@ -403,6 +404,7 @@
                          <div class="card-body text-center">
                               <h4>Doctor Mike</h4>
                               <p>Physician</p>
+                              <button type="button" class="btn" data-bs-toggle="popover" title="Doctor Mike(BOPTM)" data-bs-content="Mike is an physician graduated from Oxford University and now he is working in our team.&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Degree- BOPTM, B.Sc)">more info</button>
                          </div>
                     </div>
                   </div>
@@ -414,6 +416,7 @@
                          <div class="card-body text-center">
                               <h4>Doctor Shine</h4>
                               <p>Skin Surgeon</p>
+                              <button type="button" class="btn" data-bs-toggle="popover" title="Doctor Shine(B.SD)" data-bs-content="Dr.Shine is a skin surgeon graduated from Arizona University and now he is working in our team.&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Degrees- BOPTM, B.Sc)">more info</button>
                          </div>
                     </div>
                 </div>
@@ -504,6 +507,12 @@
 </script>
 <script>
   AOS.init();
+</script>
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
 </script>
 </body>
 </html>
